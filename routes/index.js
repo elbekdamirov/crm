@@ -8,7 +8,9 @@ const deviceRouter = require("./device.routes");
 const lidRouter = require("./lid.routes");
 const studentsRouter = require("./students.routes");
 const paymentRouter = require("./payment.routes");
-const studentGroup = require("./student_group.routes");
+const studentGroupRouter = require("./student_group.routes");
+const lessonRouter = require("./lesson.routes");
+const studentLessonRouter = require("./student_lesson.routes");
 
 const router = require("express").Router();
 
@@ -22,6 +24,8 @@ router.use("/device", deviceRouter);
 router.use("/lid", lidRouter);
 router.use("/students", studentsRouter);
 router.use("/payment", paymentRouter);
-router.use("/student-group", studentGroup);
+router.use("/student-group", studentGroupRouter);
+router.use("/lesson", lessonRouter);
+router.use("/student-lesson", studentLessonRouter);
 
 module.exports = router;
