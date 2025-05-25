@@ -47,8 +47,8 @@ const getAll = async (req, res) => {
   console.log(userAgent);
 
   const result = detector.detect(userAgent);
-  console.log("result parse: ", result);
-  console.log(DeviceHelper.isDesktop(result));
+  // console.log("result parse: ", result);
+  // console.log(DeviceHelper.isDesktop(result));
 
 
   try {
