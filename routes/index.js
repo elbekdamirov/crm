@@ -12,6 +12,7 @@ const studentGroupRouter = require("./student_group.routes");
 const lessonRouter = require("./lesson.routes");
 const studentLessonRouter = require("./student_lesson.routes");
 const otpRouter = require("./otp.routes");
+const stuffRouter = require("./stuff.routes");
 
 const router = require("express").Router();
 
@@ -29,5 +30,6 @@ router.use("/student-group", studentGroupRouter);
 router.use("/lesson", lessonRouter);
 router.use("/student-lesson", studentLessonRouter);
 router.use("/otp", otpRouter);
+router.use("/stuff", stuffRouter);
 
 module.exports = router;
