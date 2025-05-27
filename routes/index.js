@@ -13,6 +13,8 @@ const lessonRouter = require("./lesson.routes");
 const studentLessonRouter = require("./student_lesson.routes");
 const otpRouter = require("./otp.routes");
 const stuffRouter = require("./stuff.routes");
+const groupStuffRouter = require("./group_staff.routes");
+const stuffRoleRouter = require("./stuff_role.routes");
 
 const router = require("express").Router();
 
@@ -31,5 +33,7 @@ router.use("/lesson", lessonRouter);
 router.use("/student-lesson", studentLessonRouter);
 router.use("/otp", otpRouter);
 router.use("/stuff", stuffRouter);
+router.use("/group-stuff", groupStuffRouter);
+router.use("/stuff-role", stuffRoleRouter);
 
 module.exports = router;
